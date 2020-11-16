@@ -119,3 +119,24 @@ hr{
     text-decoration: none;
     font-weight: bold;
 }
+
+@media (min-width: 550px) and (max-width: 900px){
+    main::before{
+        left: -60%;
+    }
+
+    main::after{
+        right: -60%;
+    }
+}
+
+@media (max-width: 550px){
+    main::before{
+        top: -50%;
+        left: -55%;
+    }
+
+    main::after{
+        right: -55%;
+    }    
+}
