@@ -14,6 +14,31 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+main::before, main::after{
+    content: "";
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main::before{
+    background-image: url(/images/bg-pattern-top.svg);
+    top: -55%;
+    left: -35%;
+}
+
+main::after{
+    background-image: url(/images/bg-pattern-bottom.svg);
+    bottom: -55%;
+    right: -35%;
 }
 
 .card{
